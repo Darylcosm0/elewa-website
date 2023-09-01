@@ -1,3 +1,4 @@
+import { ContentDevHeroSectionComponent } from './../../components/content-dev-hero-section/content-dev-hero-section.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,7 +8,7 @@ import { ContentDevelopmentPageRoutingModule } from './content-development.routi
 
 @NgModule({
   imports: [CommonModule, ContentDevelopmentPageRoutingModule],
-  declarations: [ContentDevelopmentPageComponent],
+  declarations: [ContentDevelopmentPageComponent, ContentDevHeroSectionComponent],
   exports: [ContentDevelopmentPageComponent]
 })
 export class ContentDevelopmentModule {}

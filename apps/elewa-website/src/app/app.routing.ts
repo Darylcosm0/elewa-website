@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
+import {ContentDevelopmentModule} from '@elewa-website/features/pages/content-development'
 
 export const ELEWA_WEBSITE_ROUTES: Route[] = [
   { path: '*', redirectTo: 'home', pathMatch: 'full' },
@@ -29,6 +30,14 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
         (m) => m.ContentDevelopmentModule
       ),
   },
+  {
+    path: 'content-dev-hero',
+    loadChildren: () =>
+      import('@elewa-website/features/pages/content-development').then(
+        (m) => m.ContentDevelopmentModule
+      )
+  },
+  
 
   {
     path: 'news',
